@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Zenia® — Where Comfort Begins. Premium Indian loungewear brand crafting nightwear, nighties, kaftans, coord sets & night suits for every woman. Soft fabrics. Thoughtful design. Find us at your nearest retail store.">
+  <meta name="keywords"
+    content="Zenia loungewear, nightwear India, women nightsuit, kaftan India, premium nightwear, comfortable sleepwear, coord sets, nighty India, buy nightwear retail store">
+  <meta property="og:title" content="Zenia® — Where Comfort Begins">
+  <meta property="og:description"
+    content="Premium Indian loungewear for every woman. नाइटीज़, kaftans, coord sets & night suits crafted for comfort. Find Zenia at your nearest store.">
+  <meta property="og:type" content="website">
+  <title>Zenia® | Where Comfort Begins — Premium Women's Loungewear & Nightwear India</title>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ClothingStore","name":"Zenia","description":"Premium Indian loungewear brand specialising in nightwear, kaftans, coord sets, night suits and nighties for women.","url":"https://www.zenia.in","slogan":"Where Comfort Begins","brand":{"@type":"Brand","name":"Zenia","slogan":"Where Comfort Begins"},"productType":["Nightwear","Loungewear","काफ्तान","Coord Sets","नाइट सूट्स","नाइटीज़"],"areaServed":"IN","contactPoint":{"@type":"ContactPoint","contactType":"Customer Service","availableLanguage":["English","Hindi"]}}
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Rozha+One&family=Hind:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./main.css" />
+ 
+<link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<style>
+    /* PRODUCT SLIDESHOW */
+    .card-slideshow {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .card-slide {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      border-radius: inherit;
+    }
+
+    .card-slide.active {
+      opacity: 1;
+    }
+
+    .slide-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity 0.3s, background 0.3s;
+    }
+
+    .product-card:hover .slide-btn {
+      opacity: 1;
+    }
+
+    .slide-btn:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .slide-prev {
+      left: 12px;
+    }
+
+    .slide-next {
+      right: 12px;
+    }
+
+    .slide-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .product-thumb-overlay {
+      pointer-events: none !important;
+    }
+
+    .product-card {
+      cursor: default !important;
+    }
+
+    .nav-links a.active {
+      color: var(--red);
+    }
+
+    .nav-links a.active::after {
+      width: 100%;
+    }
+  </style>
+<body>
+
+  <nav id="navbar">
+    <a href="index-hi.html" class="nav-logo">
+      <img src=".\Assets\ZeniaTransparentText.png"
+        alt="Zenia — Where Comfort Begins">
+    </a>
+    <ul class="nav-links" id="nav-links">
+
+      <a href="javascript:;" data-section="home"
+   onclick="window.scrollToSection('home'); window.closeMenu();">होम</a>
+
+<a href="javascript:;" data-section="story"
+   onclick="window.scrollToSection('story'); window.closeMenu();">हमारी कहानी</a>
+
+<a href="javascript:;" data-section="collections"
+   onclick="window.scrollToSection('collections'); window.closeMenu();">संग्रह</a>
+
+<a href="javascript:;" data-section="testimonials"
+   onclick="window.scrollToSection('testimonials'); window.closeMenu();">ग्राहक अनुभव</a>
+
+<a href="javascript:;" data-section="find-us"
+   onclick="window.scrollToSection('find-us'); window.closeMenu();">हमें खोजें</a>
+      <li class="lang-switch">
+        <span class="lang-label">EN</span>
+        <label class="switch">
+          <input type="checkbox" checked onchange="if(this.checked) setLanguage('hi'); else setLanguage('en');">
+          <span class="slider"></span>
+        </label>
+        <span class="lang-label active">HI</span>
+      </li>
+      <li><a href="contact-hi.html" onclick="window.closeMenu()" class="nav-cta">संपर्क करें</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div>
+
+    <section class="hero" id="home">
+      <div class="hero-fabric-bg"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+
+      <div class="hero-slide-panel">
+        <div class="hero-slide active" id="slide-0">
+          <div class="hero-slide-card">
+            <div class="hero-slide-visual">
+
+  <img id="hero-nighties"
+       class="slide-fabric-pattern"
+       style="object-fit:cover; border-radius:inherit; position:absolute; inset:0; z-index:2; width:100%; height:100%;" />
+
+  <svg class="slide-fabric-pattern"
+       style="display:none;"
+       viewBox="0 0 340 453"
+       xmlns="http://www.w3.org/2000/svg"
+       preserveAspectRatio="xMidYMid slice">
+
+    <defs>
+      <pattern id="p1" x="0" y="0"
+        width="60" height="60"
+        patternUnits="userSpaceOnUse">
+
+        <path
+          d="M0 30 Q15 0 30 30 Q45 60 60 30"
+          fill="none"
+          stroke="rgba(192,57,43,0.18)"
+          stroke-width="1" />
+      </pattern>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#1a1210" />
+    <rect width="100%" height="100%" fill="url(#p1)" />
+
+  </svg>
+
+  <div class="slide-product-label">
+    <div class="slide-product-name">नाइटीज़</div>
+    <div class="slide-product-fabric">
+      रेयॉन · साटन · 100% कॉटन · मोडल ·
+      कोरियन सिल्क · लिनन रेयॉन · अल्पाइन
+    </div>
+  </div>
+
+</div>
+          </div>
+        </div>
+        <div class="hero-slide" id="slide-1">
+          <div class="hero-slide-card">
+            <div class="hero-slide-visual">
+
+  <img id="hero-kaftans"
+       class="slide-fabric-pattern"
+       style="object-fit:cover; border-radius:inherit; position:absolute; inset:0; z-index:2; width:100%; height:100%;" />
+
+  <svg class="slide-fabric-pattern"
+       style="display:none;"
+       viewBox="0 0 340 453"
+       xmlns="http://www.w3.org/2000/svg"
+       preserveAspectRatio="xMidYMid slice">
+  </svg>
+
+  <div class="slide-product-label">
+    <div class="slide-product-name">
+      काफ्तान और शॉर्ट काफ्तान
+    </div>
+
+    <div class="slide-product-fabric">
+      साटन · रेयॉन
+    </div>
+  </div>
+
+</div>
+          </div>
+        </div>
+        <div class="hero-slide" id="slide-2">
+          <div class="hero-slide-card">
+            <div class="hero-slide-visual">
+
+  <img id="hero-coords"
+       class="slide-fabric-pattern"
+       style="object-fit:cover; border-radius:inherit; position:absolute; inset:0; z-index:2; width:100%; height:100%;" />
+
+  <svg class="slide-fabric-pattern"
+       style="display:none;"
+       viewBox="0 0 340 453"
+       xmlns="http://www.w3.org/2000/svg"
+       preserveAspectRatio="xMidYMid slice">
+  </svg>
+
+  <div class="slide-product-label">
+    <div class="slide-product-name">
+      को-ऑर्ड सेट्स
+    </div>
+
+    <div class="slide-product-fabric">
+      रेयॉन · 100% कॉटन
+    </div>
+  </div>
+
+</div>
+          </div>
+        </div>
+        <div class="hero-slide" id="slide-3">
+          <div class="hero-slide-card">
+            <div class="hero-slide-visual">
+
+  <img id="hero-nightsuits"
+       class="slide-fabric-pattern"
+       style="object-fit:cover; border-radius:inherit; position:absolute; inset:0; z-index:2; width:100%; height:100%;" />
+
+  <svg class="slide-fabric-pattern"
+       style="display:none;"
+       viewBox="0 0 340 453"
+       xmlns="http://www.w3.org/2000/svg"
+       preserveAspectRatio="xMidYMid slice">
+  </svg>
+
+  <div class="slide-product-label">
+    <div class="slide-product-name">
+      नाइट सूट्स
+    </div>
+
+    <div class="slide-product-fabric">
+      साटन
+    </div>
+  </div>
+
+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide-dots">
+        <button class="hero-dot active" onclick="goToSlide(0)"></button>
+        <button class="hero-dot" onclick="goToSlide(1)"></button>
+        <button class="hero-dot" onclick="goToSlide(2)"></button>
+        <button class="hero-dot" onclick="goToSlide(3)"></button>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text" style="animation:fadeUp 0.9s ease both;">
+          <p class="hero-eyebrow">Zenia® Loungewear</p>
+          <h1 class="hero-headline serif">दिन भर की थकान के बाद,<br>वह हकदार है एक<br><em>खूबसूरत विश्राम की।</em></h1>
+          <p class="hero-moment">उन पलों के लिए, जब आप दिनभर की भागदौड़ को विराम देना चाहें।</p>
+          <p class="hero-sub">हर भारतीय महिला के लिए खास तौर पर डिज़ाइन किया गया प्रीमियम लाउंजवियर। हमारे नाइटी,
+            काफ्तान, को-ऑर्ड सेट और नाइट सूट — जो दिखने में जितने आकर्षक हैं, पहनने में उतने ही आरामदायक।</p>
+          <div class="hero-actions">
+            <a href="javascript:;" class="btn-primary" onclick="window.scrollToSection('collections')">संग्रह देखें</a>
+            <a href="javascript:;" class="btn-ghost" onclick="window.scrollToSection('find-us')">स्टोर खोजें <span
+                class="arrow">→</span></a>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE: products & fabrics only, no tagline -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item">नाइटीज़ <span class="marquee-dot"></span> काफ्तान <span class="marquee-dot"></span>
+          शॉर्ट काफ्तान <span class="marquee-dot"></span> को-ऑर्ड सेट्स <span class="marquee-dot"></span> नाइट सूट्स
+          <span class="marquee-dot"></span> Midi <span class="marquee-dot"></span> फीडिंग नाइटीज़ <span
+            class="marquee-dot"></span> रेयॉन <span class="marquee-dot"></span> साटन <span class="marquee-dot"></span>
+          100% कॉटन <span class="marquee-dot"></span> मोडल <span class="marquee-dot"></span> कोरियन सिल्क <span
+            class="marquee-dot"></span> लिनन रेयॉन <span class="marquee-dot"></span> अल्पाइन <span
+            class="marquee-dot"></span>
+        </div>
+        <div class="marquee-item">नाइटीज़ <span class="marquee-dot"></span> काफ्तान <span class="marquee-dot"></span>
+          शॉर्ट काफ्तान <span class="marquee-dot"></span> को-ऑर्ड सेट्स <span class="marquee-dot"></span> नाइट सूट्स
+          <span class="marquee-dot"></span> Midi <span class="marquee-dot"></span> फीडिंग नाइटीज़ <span
+            class="marquee-dot"></span> रेयॉन <span class="marquee-dot"></span> साटन <span class="marquee-dot"></span>
+          100% कॉटन <span class="marquee-dot"></span> मोडल <span class="marquee-dot"></span> कोरियन सिल्क <span
+            class="marquee-dot"></span> लिनन रेयॉन <span class="marquee-dot"></span> अल्पाइन <span
+            class="marquee-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORY -->
+    <section class="section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="animate-in">
+            <p class="section-label">हमारा दर्शन</p>
+            <h2 class="section-headline serif">सुकून कोई विलासिता नहीं,<br>— यह आपका <em>अधिकार है।</em></h2>
+            <p class="body-text">ज़ेनिया की शुरुआत इस अटूट विश्वास से हुई कि कड़ी मेहनत करने वाली हर महिला, घर लौटने पर
+              ऐसे कपड़ों की हकदार है जो उसे सुकून का एहसास कराएं।</p>
+            <p class="body-text">हम केवल एक फास्ट-फैशन ब्रांड नहीं हैं। हमारा मानना है कि आपके सुकून के पल उतने ही अनमोल
+              हैं, जितने आपके काम के पल।</p>
+            <div class="story-accent">"दुनिया की सबसे सशक्त महिलाएं भी, दिन के अंत में ज़ेनिया के सुकून की हकदार हैं।"
+            </div>
+          </div>
+          <div class="animate-in delay-2">
+            <div class="story-visual-inner">
+              <img src="./Assets/ZeniaLogoTransparent.png"
+     class="story-logo"
+     alt="Zenia logo">
+              <p class="story-tagline">"एक ऐसा अनुभव, जहाँ हर महिला अपने सबसे आरामदायक स्वरूप से मिलती है।"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section class="section collections-bg" id="collections">
+      <div class="container">
+        <div class="collections-header animate-in">
+          <p class="section-label" style="justify-content:center;">हम क्या बनाते हैं</p>
+          <h2 class="section-headline serif" style="font-size:clamp(36px,3vw,48px);">आपके फुर्सत के हर पल के लिए,
+            <em>विशेष रूप से तैयार।</em>
+          </h2>
+        </div>
+        <div class="filter-bar" id="filter-bar">
+          <button class="filter-btn active" onclick="filterProducts('all',this)">सभी उत्पाद</button>
+          <button class="filter-btn" onclick="filterProducts('rayon',this)">रेयॉन</button>
+          <button class="filter-btn" onclick="filterProducts('satin',this)">साटन</button>
+          <button class="filter-btn" onclick="filterProducts('cotton',this)">100% कॉटन</button>
+          <button class="filter-btn" onclick="filterProducts('modal',this)">मोडल</button>
+          <button class="filter-btn" onclick="filterProducts('alpine',this)">अल्पाइन</button>
+          <button class="filter-btn" onclick="filterProducts('korean-silk',this)">कोरियन सिल्क</button>
+          <button class="filter-btn" onclick="filterProducts('linen-rayon',this)">लिनन रेयॉन</button>
+          <button class="filter-btn" onclick="filterProducts('rayon-satin',this)">रेयॉन साटन</button>
+        </div>
+        <p class="collections-meta" id="product-count">सभी 9 उत्पाद दिखा रहे हैं</p>
+        <div class="products-grid">
+          <div class="product-card animate-in delay-1"
+            data-fabrics="rayon satin alpine cotton modal korean-silk linen-rayon rayon-satin">
+            <div class="product-thumb product-thumb-bg-1" data-category="nighties">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-thumb-overlay"><span>भारत भर में रिटेल स्टोर्स पर उपलब्ध</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">नाइटीज़</h3>
+              <p class="product-desc">बहती हुई, हवादार नाइटीज़ जो दूसरी त्वचा जैसी महसूस होती हैं।</p>
+              <div class="product-fabrics"><span class="fabric-tag">रेयॉन</span><span
+                  class="fabric-tag">साटन</span><span class="fabric-tag">अल्पाइन</span><span class="fabric-tag">100%
+                  कॉटन</span><span class="fabric-tag">लिनन रेयॉन</span><span class="fabric-tag">कोरियन सिल्क</span><span
+                  class="fabric-tag">मोडल</span><span class="fabric-tag">रेयॉन साटन</span></div>
+            </div>
+          </div>
+          <div class="product-card animate-in delay-2" data-fabrics="satin rayon rayon-satin">
+            <div class="product-thumb product-thumb-bg-2" data-category="kaftans">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-thumb-overlay"><span>भारत भर में रिटेल स्टोर्स पर उपलब्ध</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">काफ्तान</h3>
+              <p class="product-desc">सहजता से आकर्षक काफ्तान जो आपके साथ चलते हैं। पूर्ण-लंबाई और लघु शैलियों में
+                उपलब्ध।</p>
+              <div class="product-fabrics"><span class="fabric-tag">साटन</span><span
+                  class="fabric-tag">रेयॉन</span><span class="fabric-tag">रेयॉन साटन</span></div>
+            </div>
+          </div>
+          <div class="product-card animate-in delay-3" data-fabrics="rayon cotton">
+            <div class="product-thumb product-thumb-bg-3" data-category="coords">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-thumb-overlay"><span>भारत भर में रिटेल स्टोर्स पर उपलब्ध</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">को-ऑर्ड सेट्स</h3>
+              <p class="product-desc">क्यूरेटेड टू-पीस सेट जो सुबह की कॉफी से लेकर आधी रात तक आपका साथ देते हैं।</p>
+              <div class="product-fabrics"><span class="fabric-tag">रेयॉन</span><span class="fabric-tag">100%
+                  कॉटन</span></div>
+            </div>
+          </div>
+          <div class="product-card animate-in delay-1" data-fabrics="satin">
+            <div class="product-thumb product-thumb-bg-4" data-category="nightsuits">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-thumb-overlay"><span>भारत भर में रिटेल स्टोर्स पर उपलब्ध</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">नाइट सूट्स</h3>
+              <p class="product-desc">गहरी, आरामदायक नींद के लिए डिज़ाइन किए गए नाइट सूट। बेहतरीन फिट और प्रीमियम
+                फैब्रिक्स।</p>
+              <div class="product-fabrics"><span class="fabric-tag">साटन</span></div>
+            </div>
+          </div>
+          <div class="product-card animate-in delay-2" data-fabrics="rayon">
+            <div class="product-thumb product-thumb-bg-5" data-category="midi">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-thumb-overlay"><span>भारत भर में रिटेल स्टोर्स पर उपलब्ध</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">मिडी</h3>
+              <p class="product-desc">सुरुचिपूर्ण मध्य-लंबाई वाली शैलियाँ जो पूरे दिन पहनने के लिए पर्याप्त बहुमुखी हैं।
+              </p>
+              <div class="product-fabrics"><span class="fabric-tag">रेयॉन</span></div>
+            </div>
+          </div>
+          <div class="product-card animate-in delay-3" data-fabrics="alpine">
+            <div class="product-thumb" style="background:linear-gradient(135deg,#eef4f0 0%,#d4e8d8 100%);" data-category="feedingnighty">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-thumb-overlay"><span>नई माताओं के लिए सोच-समझकर डिज़ाइन किया गया</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">फीडिंग नाइटी</h3>
+              <p class="product-desc">विशेष रूप से स्तनपान कराने वाली माताओं के लिए डिज़ाइन किया गया — आसान पहुँच और
+                अधिकतम आराम।</p>
+              <div class="product-fabrics"><span class="fabric-tag">अल्पाइन</span></div>
+            </div>
+          </div>
+          <div class="product-card animate-in delay-3" data-fabrics="rayon">
+            <div class="product-thumb" style="background:linear-gradient(135deg,#f5cec7 0%,#fdf0ee 100%);" data-category="shortkaftan">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="product-thumb-overlay"><span>नए आगमन के लिए हमें इंस्टाग्राम पर फॉलो करें</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">शॉर्ट काफ्तान</h3>
+              <p class="product-desc">एक छोटे सिल्हूट में काफ्तान का आकर्षण — हवादार, आसान, और गर्म दिनों के लिए एकदम
+                सही।</p>
+              <div class="product-fabrics"><span class="fabric-tag">रेयॉन</span></div>
+            </div>
+          </div>
+          <div class="product-card animate-in delay-1" data-fabrics="satin rayon rayon-satin">
+            <div class="product-thumb" style="background:linear-gradient(135deg,#fcf4ee 0%,#fae8de 100%);" data-category="fancy">
+              <div class="card-slideshow">
+                <img class="card-slide active">
+                <img class="card-slide">
+                <img class="card-slide">
+                <button class="slide-btn slide-prev" onclick="changeCardSlide(event, -1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button class="slide-btn slide-next" onclick="changeCardSlide(event, 1)">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-thumb-overlay"><span>विशेष अवसरों के लिए सुरुचिपूर्ण</span></div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name serif">फैंसी (Fancy)</h3>
+              <p class="product-desc">नाजुक विवरणों के साथ उत्तम डिज़ाइन, उन विशेष क्षणों के लिए एकदम सही जब आप घर पर
+                अतिरिक्त सुंदर महसूस करना चाहते हैं।</p>
+              <div class="product-fabrics"><span class="fabric-tag">साटन</span><span
+                  class="fabric-tag">रेयॉन</span><span class="fabric-tag">रेयॉन साटन</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ZENIA -->
+    <section class="section">
+      <div class="container">
+        <div class="collections-header animate-in" style="margin-bottom:48px;">
+          <p class="section-label" style="justify-content:center;">महिलाएं ज़ेनिया को क्यों चुनती हैं</p>
+          <h2 class="section-headline serif" style="font-size:clamp(32px,3vw,44px);"><em>असली पहचान</em> हमारी बारीकियों
+            में बसती है।</h2>
+        </div>
+        <div class="pillars-grid">
+          <div class="pillar animate-in">
+            <div class="pillar-num serif">01</div>
+            <div class="pillar-accent"></div>
+            <h3 class="pillar-title serif">प्रीमियम फैब्रिक्स</h3>
+            <p class="pillar-text">We source seven carefully chosen fabrics — रेयॉन, साटन, 100% कॉटन, मोडल, अल्पाइन,
+              लिनन रेयॉन, and कोरियन सिल्क — each selected for comfort, breathability, and the Indian climate.</p>
+          </div>
+          <div class="pillar animate-in delay-1">
+            <div class="pillar-num serif">02</div>
+            <div class="pillar-accent"></div>
+            <h3 class="pillar-title serif">सोच-समझकर फिटिंग</h3>
+            <p class="pillar-text">भारतीय महिलाओं के शरीर और उनकी आवश्यकताओं को ध्यान में रखकर डिज़ाइन किया गया, ताकि हर
+              परिधान आपको स्वतंत्र रूप से चलने की आज़ादी दे।</p>
+          </div>
+          <div class="pillar animate-in delay-2">
+            <div class="pillar-num serif">03</div>
+            <div class="pillar-accent"></div>
+            <h3 class="pillar-title serif">किफायती विलासिता</h3>
+            <p class="pillar-text">ज़ेनिया बेजोड़ प्रीमियम गुणवत्ता और किफायती कीमत का एक सुंदर संगम है।</p>
+          </div>
+          <div class="pillar animate-in delay-3">
+            <div class="pillar-num serif">04</div>
+            <div class="pillar-accent"></div>
+            <h3 class="pillar-title serif">हर महिला के लिए निर्मित</h3>
+            <p class="pillar-text">कॉलेज जाने वाली लड़की से लेकर एक कामकाजी माँ या दादी तक — ज़ेनिया हर उस महिला के लिए
+              है जो दिन भर थकने के बाद सुकून की तलाश में है।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FABRICS -->
+    <section class="section fabrics-bg">
+      <div class="container">
+        <div class="collections-header animate-in" style="margin-bottom:48px;">
+          <p class="section-label" style="justify-content:center;">हमारी सामग्री</p>
+          <h2 class="section-headline serif" style="font-size:clamp(32px,3vw,44px);color:#fff;">ऐसे फैब्रिक्स जिन्हें
+            केवल उनकी सुंदरता के लिए नहीं, बल्कि उनके मखमली <em>एहसास</em> के लिए चुना गया है।</h2>
+        </div>
+        <div class="fabrics-grid">
+          <div class="fabric-card animate-in"><span class="fabric-num">01</span>
+            <div class="fabric-bar"></div>
+            <h3 class="fabric-name serif">रेयॉन</h3>
+            <p class="fabric-desc">हमारा सबसे बहुमुखी कपड़ा — हल्का, रेशमी-चिकना और खूबसूरती से लपेटने वाला।</p>
+          </div>
+          <div class="fabric-card animate-in delay-1"><span class="fabric-num">02</span>
+            <div class="fabric-bar"></div>
+            <h3 class="fabric-name serif">साटन</h3>
+            <p class="fabric-desc">उस महिला के लिए जो इसकी हकदार है। हमारा साटन शानदार ढंग से लिपटता है और पूरी रात
+              आरामदायक रहता है।</p>
+          </div>
+          <div class="fabric-card animate-in delay-2"><span class="fabric-num">03</span>
+            <div class="fabric-bar"></div>
+            <h3 class="fabric-name serif">100% कॉटन</h3>
+            <p class="fabric-desc">हवादार और भारत की गर्म रातों के लिए बिल्कुल सही। हमारा सूती कपड़ा अतिरिक्त कोमल
+              स्पर्श के लिए धोया जाता है।</p>
+          </div>
+          <div class="fabric-card animate-in delay-3"><span class="fabric-num">04</span>
+            <div class="fabric-bar"></div>
+            <h3 class="fabric-name serif">मोडल</h3>
+            <p class="fabric-desc">अविश्वसनीय रूप से नरम, स्वाभाविक रूप से तापमान-विनियमन, और त्वचा पर कोमल। मोडल आपको
+              बादलों जैसा एहसास देता है — हमारी प्रीमियम नाइटी रेंज में शामिल।</p>
+          </div>
+          <div class="fabric-card animate-in delay-1"><span class="fabric-num">05</span>
+            <div class="fabric-bar"></div>
+            <h3 class="fabric-name serif">कोरियन सिल्क और लिनन रेयॉन</h3>
+            <p class="fabric-desc">उन रातों के लिए जब आप वास्तव में विशेष महसूस करना चाहते हैं। कोरियन सिल्क चमक और
+              कोमलता लाता है; लिनन रेयॉन ठंडी और हवादार बनावट जोड़ता है — दोनों हमारी नाइटी रेंज के लिए विशेष हैं।</p>
+          </div>
+          <div class="fabric-card animate-in delay-2"><span class="fabric-num">06</span>
+            <div class="fabric-bar"></div>
+            <h3 class="fabric-name serif">अल्पाइन</h3>
+            <p class="fabric-desc">नरम, गर्म और आरामदायक — अल्पाइन कपड़े असाधारण आराम प्रदान करते हैं, जो दैनिक विश्राम
+              और नई माताओं के लिए जरूरी कोमलता दोनों के लिए उपयुक्त है।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testi-bg" id="testimonials">
+      <div class="container">
+        <div class="collections-header animate-in" style="margin-bottom:60px;">
+          <p class="section-label" style="justify-content:center;">महिलाएं क्या कहती हैं</p>
+          <h2 class="section-headline serif" style="font-size:clamp(32px,3vw,44px);color:#fff;">जिसने भी इसे एक बार
+            पहना,<br><em>वह हमेशा के लिए ज़ेनिया की हो गई।</em></h2>
+        </div>
+        <div class="testi-slider animate-in">
+          <div class="testi-track" id="testi-track">
+            <div class="testi-slide">
+              <div class="testi-inner">
+                <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span
+                    class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                <p class="testi-quote">मैं अब तीन साल से ज़ेनिया नाइटी पहन रही हूँ। सूती कपड़ा इतना मुलायम है कि वास्तव
+                  में लगता है जैसे यह भारतीय त्वचा के लिए ही बना हो।</p>
+                <div class="testi-author">
+                  <div class="author-divider"></div><span class="author-name">मीरा आर.</span><span
+                    class="author-detail">मुंबई · नियमित ग्राहक</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="testi-inner">
+                <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span
+                    class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                <p class="testi-quote">मैंने अपनी माँ को ज़ेनिया को-ऑर्ड सेट उपहार में दिया और उन्होंने मुझे धन्यवाद
+                  देने के लिए कॉल किया।</p>
+                <div class="testi-author">
+                  <div class="author-divider"></div><span class="author-name">प्रिया एस.</span><span
+                    class="author-detail">पुणे · उपहार खरीदार</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="testi-inner">
+                <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span
+                    class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                <p class="testi-quote">काफ्तान खूबसूरती से लपेटता है और कपड़ा इतना हल्का है कि मैं भूल जाती हूँ कि मैंने
+                  इसे पहना है।</p>
+                <div class="testi-author">
+                  <div class="author-divider"></div><span class="author-name">अनीता के.</span><span
+                    class="author-detail">दिल्ली · कामकाजी पेशेवर</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="testi-inner">
+                <div class="testi-stars"><span class="star">★</span><span class="star">★</span><span
+                    class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+                <p class="testi-quote">कपड़े की गुणवत्ता के बारे में विशेष होने के कारण, ज़ेनिया ने मुझे वास्तव में
+                  आश्चर्यचकित कर दिया।</p>
+                <div class="testi-author">
+                  <div class="author-divider"></div><span class="author-name">सुनीता वी.</span><span
+                    class="author-detail">बैंगलोर · गृहिणी</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-nav">
+            <button class="testi-btn" aria-label="Previous" onclick="prevTesti()"><svg width="16" height="16"
+                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg></button>
+            <div class="testi-dots-row" id="testi-dots">
+              <button class="testi-dot active" onclick="goToTesti(0)"></button>
+              <button class="testi-dot" onclick="goToTesti(1)"></button>
+              <button class="testi-dot" onclick="goToTesti(2)"></button>
+              <button class="testi-dot" onclick="goToTesti(3)"></button>
+            </div>
+            <button class="testi-btn" aria-label="Next" onclick="nextTesti()"><svg width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg></button>
+          </div>
+        </div>
+        <div class="testi-upload animate-in delay-2">
+          <p>क्या आप ज़ेनिया के बारे में कुछ कहना चाहते हैं? हमें आपकी बात सुनकर खुशी होगी।</p>
+          <a href="contact.html">अपना अनुभव साझा करें →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIND US — no instructions, just presence -->
+    <section class="section find-bg" id="find-us">
+      <div class="container">
+        <div class="find-full animate-in">
+          <div class="find-left">
+            <p class="section-label">हमारी उपस्थिति</p>
+            <h2 class="section-headline serif">ज़ेनिया आपकी सोच से भी<br><em>ज्यादा करीब है।</em></h2>
+            <p class="body-text" style="color:rgba(255,255,255,0.7);font-size:15px;margin-bottom:16px;">हम पूरे भारत में
+              महिलाओं के कपड़े, एथनिक वियर और नाइटवियर रिटेल स्टोर्स पर उपलब्ध हैं।</p>
+            <p class="body-text" style="color:rgba(255,255,255,0.7);font-size:15px;">जहाँ भी अच्छी गुणवत्ता वाले
+              नाइटवियर मिलते हैं, वहाँ ज़ेनिया है।</p>
+          </div>
+          <div class="find-right">
+            <p class="section-label">हर दिन बढ़ रहे हैं</p>
+            <h3
+              style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--charcoal);margin-bottom:8px;">
+              अखिल भारतीय <em style="font-style:italic;color:var(--red);">वितरण।</em></h3>
+            <p style="font-size:14px;color:var(--stone);">मेट्रो शहरों से लेकर छोटे शहरों तक महिलाओं तक पहुंचना।</p>
+            <div class="find-presence-grid">
+              <div class="find-presence-card">
+                <div class="pres-num">500+</div>
+                <div class="pres-label">रिटेल पार्टनर्स</div>
+              </div>
+              <div class="find-presence-card">
+                <div class="pres-num">17+</div>
+                <div class="pres-label">शिल्प के वर्ष</div>
+              </div>
+              <div class="find-presence-card">
+                <div class="pres-num">5+</div>
+                <div class="pres-label">राज्य और शहर</div>
+              </div>
+              <div class="find-presence-card">
+                <div class="pres-num">7+</div>
+                <div class="pres-label">कपड़े के प्रकार</div>
+              </div>
+            </div>
+            <div class="find-cta-strip">
+              <p>क्या आप हमें अपने पास नहीं ढूंढ पा रहे हैं?</p>
+              <a href="contact.html">संपर्क करें</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <div class="insta-strip">
+      <p class="serif">इंस्टाग्राम पर हमारी यात्रा का पालन करें</p>
+      <p class="sub">नए संग्रह · शैली प्रेरणा · पर्दे के पीछे</p>
+      <a href="https://www.instagram.com/" target="_blank" class="insta-btn">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+        </svg>
+        @zenia_loungewear
+      </a>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src=".\Assets\ZeniaTransparentText.png" alt="Zenia">
+          <p>हर महिला के लिए प्रीमियम भारतीय लाउंजवियर। नाइटी, काफ्तान, को-ऑर्ड सेट और नाइट सूट — जीवन के लिए डिज़ाइन
+            किए गए।</p>
+          <p style="margin-top:16px;font-size:12px;color:rgba(255,255,255,0.3);">पूरे भारत में चुनिंदा रिटेल स्टोर्स पर
+            उपलब्ध है।</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">अन्वेषण</p>
+          <ul>
+            <li><a href="contact.html">हमारी कहानी</a></li>
+            <li><a href="contact.html">संग्रह</a></li>
+            <li><a href="contact.html">ग्राहक अनुभव</a></li>
+            <li><a href="contact.html">हमें खोजें</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">संग्रह</p>
+          <ul>
+            <li><a href="index-hi.html#collections">नाइटीज़</a></li>
+            <li><a href="index-hi.html#collections">काफ्तान</a></li>
+            <li><a href="index-hi.html#collections">को-ऑर्ड सेट्स</a></li>
+            <li><a href="index-hi.html#collections">नाइट सूट्स</a></li>
+            <li><a href="index-hi.html#collections">लाउंजवियर</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">संपर्क</p>
+          <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">इंस्टाग्राम</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">फेसबुक</a></li>
+            <li><a href="mailto:hello@zenia.in">hello@zenia.in</a></li>
+            <li><a href="contact.html">संपर्क करें</a></li>
+          </ul>
+          <p class="footer-col-title" style="margin-top:32px;">व्यापार के लिए</p>
+          <ul>
+            <li><a href="contact.html">स्टॉकिस्ट बनें</a></li>
+            <li><a href="contact.html">सहयोग</a></li>
+            <li><a href="contact-hi.html#faq">सामान्य प्रश्न</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Zenia<span class="footer-reg">®</span>. सर्वाधिकार सुरक्षित। | <em style="font-style:italic;">जहाँ
+            आराम की शुरुआत होती है...</em></p>
+        <p><a href="contact.html">गोपनीयता नीति</a> &nbsp;·&nbsp; <a href="contact.html">शर्तें</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+    </svg>
+  </button>
+
+  <div class="notify" id="notify"></div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+      document.getElementById('backTop').classList.toggle('visible', window.scrollY > 400);
+    });
+    function toggleMenu() { document.getElementById('nav-links').classList.toggle('open'); }
+    function closeMenu() { document.getElementById('nav-links').classList.remove('open'); }
+    function showPage(name) { document.querySelectorAll('.page').forEach(p => p.classList.remove('active')); document.getElementById('page-' + name).classList.add('active'); if (name === 'contact') { window.scrollTo({ top: 0, behavior: 'smooth' }); } observeAnimations(); }
+    function scrollToSection(id) {
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }, 120);
+    }
+    function observeSections() {
+  const sections = document.querySelectorAll(
+    '#home, #story, #collections, #testimonials, #find-us'
+  );
+
+  const navLinks = document.querySelectorAll(
+    '.nav-links a[data-section]'
+  );
+
+  function updateActive() {
+    const scrollPos = window.scrollY + 120;
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+      if (
+        scrollPos >= section.offsetTop &&
+        scrollPos < section.offsetTop + section.offsetHeight
+      ) {
+        currentSection = section.id;
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.toggle(
+        'active',
+        link.dataset.section === currentSection
+      );
+    });
+  }
+
+  window.addEventListener('scroll', updateActive);
+  updateActive();
+}
+
+document.addEventListener('DOMContentLoaded', observeSections);
+    observeSections();
+
+    // FILTER
+    function filterProducts(fabric, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cards = document.querySelectorAll('.products-grid .product-card');
+      let visible = 0;
+      cards.forEach(card => {
+        const fabrics = card.dataset.fabrics || '';
+        const show = fabric === 'all' || fabrics.includes(fabric);
+        card.classList.toggle('hidden', !show);
+        if (show) visible++;
+      });
+      const countEl = document.getElementById('product-count');
+      if (fabric === 'all') countEl.textContent = 'सभी 9 उत्पाद दिखा रहे हैं';
+      else countEl.textContent = btn.textContent + ' में ' + visible + ' उत्पाद उपलब्ध हैं';
+    }
+
+    
+    function changeCardSlide(event, direction) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const btn =
+    event.currentTarget;
+
+  const slideshow =
+    btn.closest(".card-slideshow");
+
+  const slides =
+    Array.from(
+      slideshow.querySelectorAll(
+        ".card-slide"
+      )
+    );
+
+  if (!slides.length) return;
+
+  let currentIndex =
+    slides.findIndex(slide =>
+      slide.classList.contains(
+        "active"
+      )
+    );
+
+  if (currentIndex === -1) {
+    currentIndex = 0;
+    slides[0].classList.add(
+      "active"
+    );
+  }
+
+  slides[currentIndex]
+    .classList.remove("active");
+
+  const nextIndex =
+    (
+      currentIndex +
+      direction +
+      slides.length
+    ) % slides.length;
+
+  slides[nextIndex]
+    .classList.add("active");
+}
+
+function startCardAutoScroll() {
+    const slideshows = document.querySelectorAll('.card-slideshow');
+
+    slideshows.forEach((slideshow) => {
+      const slides = slideshow.querySelectorAll('.card-slide');
+
+      // Skip if slideshow has 0 or 1 slide
+      if (slides.length <= 1) return;
+
+      let currentIndex = 0;
+
+      // Ensure first slide is active
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === 0);
+      });
+
+      setInterval(() => {
+        slides[currentIndex].classList.remove('active');
+
+        currentIndex = (currentIndex + 1) % slides.length;
+
+        slides[currentIndex].classList.add('active');
+      }, 5000); // 5 seconds
+    });
+  }
+
+  // Start after page loads
+  document.addEventListener('DOMContentLoaded', startCardAutoScroll);
+
+    // TESTIMONIALS
+    let ct = 0; const tt = 4;
+    function goToTesti(n) { ct = (n + tt) % tt; document.getElementById('testi-track').style.transform = 'translateX(-' + (ct * 100) + '%)'; document.querySelectorAll('.testi-dot').forEach((d, i) => d.classList.toggle('active', i === ct)); }
+    function nextTesti() { goToTesti(ct + 1); }
+    function prevTesti() { goToTesti(ct - 1); }
+    setInterval(() => goToTesti(ct + 1), 6500);
+
+    // FAQ
+    function toggleFaq(btn) { const a = btn.nextElementSibling; const open = btn.classList.contains('open'); document.querySelectorAll('.faq-q').forEach(b => { b.classList.remove('open'); b.nextElementSibling.classList.remove('open'); }); if (!open) { btn.classList.add('open'); a.classList.add('open'); } }
+
+    // FORM
+    function handleFormSubmit(e) { e.preventDefault(); showNotify("Thank you! We'll be in touch within 1–2 business days."); e.target.reset(); }
+    function showNotify(msg) { const el = document.getElementById('notify'); el.textContent = msg; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 5000); }
+
+    // ANIMATIONS
+    function observeAnimations() { const ob = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 }); document.querySelectorAll('.animate-in').forEach(el => ob.observe(el)); }
+    observeAnimations();
+  </script>
+
+  <!-- LANGUAGE SELECTOR MODAL -->
+  <div id="lang-modal"
+    style="display:none;position:fixed;inset:0;background:rgba(44,37,34,0.95);z-index:99999;align-items:center;justify-content:center;backdrop-filter:blur(12px);">
+    <div
+      style="background:#fff;padding:56px 48px;border-radius:4px;text-align:center;max-width:440px;width:90%;box-shadow:0 24px 64px rgba(0,0,0,0.2);">
+      <img src="https://placehold.co/300x80/FEFCFA/C0392B?text=ZENIA&font=playfair-display" alt="Zenia"
+        style="margin-bottom:32px;width:200px;">
+      <h2
+        style="font-family:'Cormorant Garamond',serif;font-size:32px;margin-bottom:12px;color:#2C2522;font-weight:400;">
+        अपनी भाषा चुनें</h2>
+      <p style="font-size:16px;color:#5C4A44;margin-bottom:40px;font-family:'DM Sans',sans-serif;">अपनी पसंदीदा भाषा
+        चुनें</p>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <button onclick="window.setLanguage('en')"
+          style="padding:16px;background:#C0392B;color:#fff;border:none;border-radius:2px;font-size:14px;letter-spacing:0;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background 0.2s;">English</button>
+        <button onclick="window.setLanguage('hi')"
+          style="padding:16px;background:#FDF0EE;color:#C0392B;border:1px solid rgba(192,57,43,0.2);border-radius:2px;font-size:16px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background 0.2s;">हिंदी
+          (Hindi)</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.initLanguage = function () {
+      const lang = localStorage.getItem('zenia_lang');
+      const isHindiPage = window.location.pathname.includes('-hi.html');
+
+      if (!lang) {
+        const modal = document.getElementById('lang-modal');
+        if (modal) {
+          modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+      } else {
+        if (lang === 'hi' && !isHindiPage) {
+          const target = window.location.pathname.includes('contact') ? 'contact-hi.html' : 'index-hi.html';
+          window.location.href = target;
+        } else if (lang === 'en' && isHindiPage) {
+          const target = window.location.pathname.includes('contact') ? 'contact.html' : 'index.html';
+          window.location.href = target;
+        }
+      }
+    }
+
+    window.setLanguage = function (lang) {
+      localStorage.setItem('zenia_lang', lang);
+      if (lang === 'hi') {
+        const target = window.location.pathname.includes('contact') ? 'contact-hi.html' : 'index-hi.html';
+        window.location.href = target;
+      } else {
+        const modal = document.getElementById('lang-modal');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+        document.body.style.overflow = 'auto';
+        if (window.location.pathname.includes('-hi.html')) {
+          const target = window.location.pathname.includes('contact') ? 'contact.html' : 'index.html';
+          window.location.href = target;
+        }
+      }
+    }
+
+    // Call initLanguage immediately
+    window.initLanguage();
+
+    // Navbar scroll logic
+    window.closeMenu = function () {
+      const links = document.getElementById('nav-links');
+      if (links) links.classList.remove('active');
+    }
+
+    window.scrollToSection = function (id) {
+      const el = document.getElementById(id);
+      if (el) {
+        const offset = 70;
+        const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+
+    // Animation observer logic (which used to be in index.html)
+    function observeAnimations() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.animate-in').forEach((el) => {
+        observer.observe(el);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      observeAnimations();
+
+      // Sync language toggle switch state
+      const isHindiPage = window.location.pathname.includes('-hi.html');
+      const langCheckbox = document.querySelector('.switch input');
+      if (langCheckbox) {
+        langCheckbox.checked = isHindiPage;
+      }
+
+      // Sync EN/HI label active states
+      const langLabels = document.querySelectorAll('.lang-switch .lang-label');
+      if (langLabels.length >= 2) {
+        if (isHindiPage) {
+          langLabels[0].classList.remove('active');
+          langLabels[1].classList.add('active');
+        } else {
+          langLabels[0].classList.add('active');
+          langLabels[1].classList.remove('active');
+        }
+      }
+
+    });
+  </script>
+  
+  <script type = "module" src="./imageconfig.js"></script>
+<script type="module" src="./image-loader.js"></script>
+</body>
+
+</html>
