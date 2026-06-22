@@ -1,7 +1,7 @@
 window.ZENIA = {
 
   navbarLogo:
-    "./Assets/Zenia Transparent Text.png",
+    "./Assets/ZeniaTransparentText.png",
 
   philosophyLogo:
     "./Assets/ZeniaLogoTransparent.png",
