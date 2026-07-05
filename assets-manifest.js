@@ -12,8 +12,8 @@ window.COLLECTION_IMAGES = {
     ],
 
     coords: [
-        "Assets/coords/c1.jpg",
-        "Assets/coords/c2.jpg",
+        "ZeniaWebsite/Assets/coords/c1.jpg",
+        "ZeniaWebsite/Assets/coords/c2.jpg",
         "Assets/coords/c3.jpg",
         "Assets/coords/c4.jpg"
     ],
