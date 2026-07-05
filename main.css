@@ -660,6 +660,12 @@
       }
     }
 
+    .marquee-section {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
     .marquee-track {
       display: flex;
       animation: marquee 35s linear infinite;
