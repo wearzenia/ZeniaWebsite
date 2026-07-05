@@ -134,22 +134,7 @@ const collectionImages = {
 
 
 
-const collections = collectionImages;
-
-// Organize images by folder name
-for (const path in collectionImages) {
-
-  const parts = path.split("/");
-  const folder = parts[2];
-
-  if (!collections[folder]) {
-    collections[folder] = [];
-  }
-
-  collections[folder].push(
-    collectionImages[path]
-  );
-}
+const collections = window.COLLECTION_IMAGES || {};
 
 // Create slideshow images dynamically
 document
