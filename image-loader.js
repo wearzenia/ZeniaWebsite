@@ -48,89 +48,89 @@ for (const id in heroMap) {
 
 // AUTO LOAD COLLECTION IMAGES (VITE)
 
-const collectionImages = {
+// const collectionImages = {
 
-  nighties: Object.values(
-    import.meta.glob(
-      "/Assets/nighties/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  ),
+//   nighties: Object.values(
+//     import.meta.glob(
+//       "/Assets/nighties/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   ),
 
-  kaftans: Object.values(
-    import.meta.glob(
-      "/Assets/kaftans/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  ),
+//   kaftans: Object.values(
+//     import.meta.glob(
+//       "/Assets/kaftans/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   ),
 
-  coords: Object.values(
-    import.meta.glob(
-      "/Assets/coords/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  ),
+//   coords: Object.values(
+//     import.meta.glob(
+//       "/Assets/coords/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   ),
 
-  nightsuits: Object.values(
-    import.meta.glob(
-      "/Assets/nightsuits/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  ),
+//   nightsuits: Object.values(
+//     import.meta.glob(
+//       "/Assets/nightsuits/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   ),
 
-  midi: Object.values(
-    import.meta.glob(
-      "/Assets/midi/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  ),
+//   midi: Object.values(
+//     import.meta.glob(
+//       "/Assets/midi/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   ),
 
-  feedingnighty: Object.values(
-    import.meta.glob(
-      "/Assets/feeding-nighty/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  ),
+//   feedingnighty: Object.values(
+//     import.meta.glob(
+//       "/Assets/feeding-nighty/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   ),
 
-  shortkaftan: Object.values(
-    import.meta.glob(
-      "/Assets/short-kaftan/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  ),
+//   shortkaftan: Object.values(
+//     import.meta.glob(
+//       "/Assets/short-kaftan/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   ),
 
-  fancy: Object.values(
-    import.meta.glob(
-      "/Assets/fancy/*.{png,jpg,jpeg,webp}",
-      {
-        eager: true,
-        import: "default"
-      }
-    )
-  )
+//   fancy: Object.values(
+//     import.meta.glob(
+//       "/Assets/fancy/*.{png,jpg,jpeg,webp}",
+//       {
+//         eager: true,
+//         import: "default"
+//       }
+//     )
+//   )
 
-};
+// };
 
 
 
