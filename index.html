@@ -1134,7 +1134,12 @@ function startCardAutoScroll() {
     window.setLanguage = function (lang) {
 
   const loader = document.getElementById('page-loader');
-  if (loader) loader.classList.remove('hidden');
+
+  function showLoader() {
+    if (loader) loader.classList.remove('hidden');
+  }
+
+
 
   localStorage.setItem('zenia_lang', lang);
 
@@ -1144,6 +1149,7 @@ function startCardAutoScroll() {
         ? 'contact-hi.html'
         : 'index-hi.html';
 
+    showLoader();
     window.location.href = target;
 
   } else {
@@ -1154,12 +1160,14 @@ function startCardAutoScroll() {
     document.body.style.overflow = 'auto';
 
     if (window.location.pathname.includes('-hi.html')) {
-      const target =
-        window.location.pathname.includes('contact')
-          ? 'contact.html'
-          : 'index.html';
 
-      window.location.href = target;
+        const target =
+          window.location.pathname.includes('contact')
+            ? 'contact.html'
+            : 'index.html';
+    
+        showLoader();
+        window.location.href = target;
     }
   }
 }
