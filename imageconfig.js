@@ -9,16 +9,16 @@ window.ZENIA = {
   hero: {
 
     nighties:
-      "./Assets/hero/hero-nighties.png",
+      "./Assets/hero/nighty.png",
 
     kaftans:
-      "./Assets/hero/hero-kaftans.png",
+      "./Assets/hero/kaftan.png",
 
     coords:
-      "./Assets/hero/hero-coords.png",
+      "./Assets/hero/coordset.png",
 
     nightsuits:
-      "./Assets/hero/hero-nightsuits.png"
+      "./Assets/hero/nightsuit.png"
 
   }
 
