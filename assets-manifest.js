@@ -7,15 +7,15 @@ window.COLLECTION_IMAGES = {
     ],
 
     kaftans: [
-        "Assets/kaftans/k1.jpg",
-        "Assets/kaftans/k2.jpg"
+        "Assets/kaftans/kaftan1.png",
+        "Assets/kaftans/kaftan2.png",
+        "Assets/kaftans/kaftan3.png"
     ],
 
     coords: [
-        "Assets/coords/c1.jpg",
-        "Assets/coords/c2.jpg",
-        "Assets/coords/c3.jpg",
-        "Assets/coords/c4.jpg"
+        "Assets/coords/coordset1.png",
+        "Assets/coords/coordset2.png",
+        "Assets/coords/coordset3.png",
     ],
 
     nightsuits: [],
