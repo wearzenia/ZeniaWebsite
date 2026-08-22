@@ -30,9 +30,21 @@ window.COLLECTION_IMAGES = {
         "Assets/midi/midi3.png"
     ],
 
-    "feeding-nighty": [],
+    "feeding-nighty": [
+         "Assets/feedingnighty/feedingnighty1.png",
+        "Assets/feedingnighty/feedingnighty2.png",
+        "Assets/feedingnighty/feedingnighty3.png"
+    ],
 
-    "short-kaftan": [],
+    "short-kaftan": [
+         "Assets/shortkaftan/shortkaftan1.png",
+        "Assets/shortkaftan/shortkaftan2.png",
+        "Assets/shortkaftan/shortkaftan3.png"
+    ],
 
-    fancy: []
+    fancy: [
+          "Assets/fancy/fancy1.png",
+        "Assets/fancy/fancy2.png",
+        "Assets/fancy/fancy3.png"
+    ]
 };
