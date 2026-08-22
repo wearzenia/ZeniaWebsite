@@ -30,13 +30,13 @@ window.COLLECTION_IMAGES = {
         "Assets/midi/midi3.png"
     ],
 
-    "feeding-nighty": [
+    feedingnighty: [
          "Assets/feedingnighty/feedingnighty1.png",
         "Assets/feedingnighty/feedingnighty2.png",
         "Assets/feedingnighty/feedingnighty3.png"
     ],
 
-    "short-kaftan": [
+    shortkaftan: [
          "Assets/shortkaftan/shortkaftan1.png",
         "Assets/shortkaftan/shortkaftan2.png",
         "Assets/shortkaftan/shortkaftan3.png"
