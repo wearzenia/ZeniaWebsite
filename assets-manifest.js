@@ -15,7 +15,7 @@ window.COLLECTION_IMAGES = {
     coords: [
         "Assets/coords/coordset1.png",
         "Assets/coords/coordset2.png",
-        "Assets/coords/coordset3.png",
+        "Assets/coords/coordset3.png"
     ],
 
     nightsuits: [
