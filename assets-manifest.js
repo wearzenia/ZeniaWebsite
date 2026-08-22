@@ -24,7 +24,11 @@ window.COLLECTION_IMAGES = {
         "Assets/nightsuits/nightsuit3.png"
     ],
 
-    midi: [],
+    midi: [
+         "Assets/midi/midi1.png",
+        "Assets/midi/midi2.png",
+        "Assets/midi/midi3.png"
+    ],
 
     "feeding-nighty": [],
 
