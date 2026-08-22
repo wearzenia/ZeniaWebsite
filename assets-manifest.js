@@ -1,9 +1,9 @@
 window.COLLECTION_IMAGES = {
 
     nighties: [
-        "Assets/nighties/n1.jpg",
-        "Assets/nighties/n2.jpg",
-        "Assets/nighties/n3.jpg"
+        "Assets/nighties/nighty1.jpg",
+        "Assets/nighties/nighty2.jpg",
+        "Assets/nighties/nighty3.jpg"
     ],
 
     kaftans: [
