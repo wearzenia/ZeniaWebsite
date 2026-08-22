@@ -18,7 +18,11 @@ window.COLLECTION_IMAGES = {
         "Assets/coords/coordset3.png",
     ],
 
-    nightsuits: [],
+    nightsuits: [
+         "Assets/nightsuits/nightsuit1.png",
+        "Assets/nightsuits/nightsuit2.png",
+        "Assets/nightsuits/nightsuit3.png"
+    ],
 
     midi: [],
 
